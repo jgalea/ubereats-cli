@@ -47,13 +47,16 @@ def render_stores(stores, fmt: str) -> None:
         print(json.dumps(to_jsonable(stores), ensure_ascii=False, indent=2))
         return
     if fmt == "toon":
-        print(to_toon(stores, root="stores"))
+        rows = [
+            {"uuid": s.uuid, "title": s.title, "eta": s.eta, "rating": s.rating} for s in stores
+        ]
+        print(to_toon(rows, root="stores"))
         return
     table = Table(show_header=True, header_style="bold")
     table.add_column("Store")
     table.add_column("ETA")
     table.add_column("Rating")
-    table.add_column("UUID", style="dim")
+    table.add_column("UUID", style="dim", overflow="fold")
     for store in stores:
         table.add_row(store.title, store.eta or "", store.rating or "", store.uuid)
     Console().print(table)
@@ -88,7 +91,7 @@ def render_menu(menu: Menu, fmt: str) -> None:
         )
         table.add_column("Item")
         table.add_column("Price", justify="right")
-        table.add_column("UUID", style="dim")
+        table.add_column("UUID", style="dim", overflow="fold")
         for item in section.items:
             name = item.title + (" (sold out)" if item.sold_out else "")
             table.add_row(name, format_price(item.price, menu.currency), item.uuid)

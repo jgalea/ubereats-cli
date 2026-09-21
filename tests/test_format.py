@@ -56,3 +56,12 @@ def test_to_toon_falls_back_for_a_mapping():
     out = to_toon({"title": "T", "currency": "EUR"}, root="menu")
     assert "title: T" in out
     assert "currency: EUR" in out
+
+
+def test_render_stores_toon_drops_image_urls(capsys):
+    from ubereats.format import render_stores
+
+    render_stores([Store(uuid="1", title="A", eta="20 min", rating="4.6", image="https://x/y.jpg")], "toon")
+    out = capsys.readouterr().out
+    assert out.splitlines()[0] == "stores[1]{uuid,title,eta,rating}:"
+    assert "https://" not in out
