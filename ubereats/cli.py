@@ -5,6 +5,7 @@ import typer
 from . import __version__
 from . import exclude as exclude_mod
 from . import location
+from . import recent
 from .errors import UberEatsError
 from .format import render_menu, render_stores
 from .search import search as do_search
@@ -79,6 +80,7 @@ def search(
     session = _run(lambda: build_session(locale))
     stores = _run(lambda: do_search(session, text, limit=limit))
     kept, hidden = exclude_mod.apply(stores, exclude_mod.load_exclusions(exclude))
+    recent.save("stores", [store.uuid for store in kept])
     if hidden:
         names = ", ".join(store.title for store in hidden)
         print(f"{len(hidden)} hidden by --exclude: {names}", file=sys.stderr)
@@ -87,11 +89,17 @@ def search(
 
 @app.command()
 def menu(
-    store: str = typer.Argument(..., help="Store uuid or ubereats.com/store/... URL"),
+    store: str = typer.Argument(..., help="Row number from the last search, a store uuid, or a store URL"),
     locale: str = typer.Option("pt", "--locale"),
     as_json: bool = typer.Option(False, "--json"),
     as_toon: bool = typer.Option(False, "--toon"),
 ) -> None:
+    if store.isdigit():
+        from_recent = recent.lookup("stores", int(store))
+        if from_recent is None:
+            typer.echo(f"No store {store} in the last search. Run a search first.")
+            raise typer.Exit(code=7)
+        store = from_recent
     session = _run(lambda: build_session(locale))
     result = _run(lambda: do_menu(session, store))
     render_menu(result, _fmt(as_json, as_toon))

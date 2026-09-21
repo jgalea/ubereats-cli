@@ -123,3 +123,41 @@ def test_api_errors_exit_with_their_code(monkeypatch):
     result = runner.invoke(app, ["search", "sushi"])
     assert result.exit_code == 4
     assert "Cloudflare" in result.stdout
+
+
+def test_menu_accepts_a_row_number_from_the_last_search(monkeypatch):
+    from ubereats import cli, recent
+
+    _saved_address()
+    recent.save("stores", ["uuid-one", "uuid-two"])
+    seen = {}
+    monkeypatch.setattr(cli, "build_session", lambda *a, **kw: object())
+
+    def fake_menu(session, ref):
+        seen["ref"] = ref
+        return FIXTURE_MENU
+
+    monkeypatch.setattr(cli, "do_menu", fake_menu)
+    result = runner.invoke(app, ["menu", "2", "--toon"])
+    assert result.exit_code == 0
+    assert seen["ref"] == "uuid-two"
+
+
+def test_menu_row_number_with_no_prior_search(monkeypatch):
+    from ubereats import cli
+
+    _saved_address()
+    monkeypatch.setattr(cli, "build_session", lambda *a, **kw: object())
+    result = runner.invoke(app, ["menu", "3"])
+    assert result.exit_code == 7
+    assert "last search" in result.stdout
+
+
+def test_search_caches_results_for_menu(monkeypatch):
+    from ubereats import cli, recent
+
+    _saved_address()
+    monkeypatch.setattr(cli, "build_session", lambda *a, **kw: object())
+    monkeypatch.setattr(cli, "do_search", lambda session, query, limit: FIXTURE_STORES)
+    runner.invoke(app, ["search", "sushi"])
+    assert recent.lookup("stores", 1) == "u1"

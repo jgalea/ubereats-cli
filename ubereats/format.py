@@ -1,4 +1,5 @@
 import dataclasses
+import itertools
 import json
 
 from rich.console import Console
@@ -53,12 +54,12 @@ def render_stores(stores, fmt: str) -> None:
         print(to_toon(rows, root="stores"))
         return
     table = Table(show_header=True, header_style="bold")
+    table.add_column("#", justify="right", style="dim")
     table.add_column("Store")
     table.add_column("ETA")
     table.add_column("Rating")
-    table.add_column("UUID", style="dim", overflow="fold")
-    for store in stores:
-        table.add_row(store.title, store.eta or "", store.rating or "", store.uuid)
+    for number, store in enumerate(stores, start=1):
+        table.add_row(str(number), store.title, store.eta or "", store.rating or "")
     Console().print(table)
 
 
@@ -82,6 +83,7 @@ def render_menu(menu: Menu, fmt: str) -> None:
         print(to_toon(rows, root="items"))
         return
     console = Console()
+    counter = itertools.count(1)
     header = f"{menu.title}  ({menu.item_count} items"
     header += f", {menu.eta})" if menu.eta else ")"
     console.print(header, style="bold")
@@ -89,10 +91,10 @@ def render_menu(menu: Menu, fmt: str) -> None:
         table = Table(
             title=section.title, title_justify="left", show_header=True, header_style="bold"
         )
+        table.add_column("#", justify="right", style="dim")
         table.add_column("Item")
         table.add_column("Price", justify="right")
-        table.add_column("UUID", style="dim", overflow="fold")
         for item in section.items:
             name = item.title + (" (sold out)" if item.sold_out else "")
-            table.add_row(name, format_price(item.price, menu.currency), item.uuid)
+            table.add_row(str(next(counter)), name, format_price(item.price, menu.currency))
         console.print(table)
