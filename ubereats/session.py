@@ -38,13 +38,33 @@ class Session:
         }
 
     def _is_challenge(self, response) -> bool:
-        if response.status_code in (403, 503):
+        if any(marker in response.text for marker in CHALLENGE_MARKERS):
             return True
-        return any(marker in response.text for marker in CHALLENGE_MARKERS)
+        if response.status_code not in (403, 503):
+            return False
+        return self._botdefense_state(response) is None
+
+    def _botdefense_state(self, response) -> str | None:
+        try:
+            body = response.json()
+        except Exception:
+            return None
+        if not isinstance(body, dict):
+            return None
+        return ((body.get("metadata") or {}).get("botdefense") or {}).get("state")
 
     def api(self, endpoint: str, payload: dict) -> dict:
         url = f"{self.API_BASE}/{endpoint}?localeCode={self.locale}"
         response = self._post(url, payload)
+        state = self._botdefense_state(response)
+        if state and state != "allow":
+            raise ChallengeError(
+                f"Uber's bot defense is challenging this machine (state: {state}). "
+                "This is Uber's own check, not Cloudflare, and retrying will not clear "
+                "it. It usually follows a burst of requests from one address. Open "
+                "ubereats.com in a browser on this connection, complete the check, then "
+                "wait a few minutes before trying again."
+            )
         if self._is_challenge(response):
             self._reset_transport()
             response = self._post(url, payload)

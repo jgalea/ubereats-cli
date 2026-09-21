@@ -81,11 +81,17 @@ ubereats version
 
 Browsing works end to end: address, search, menus. Logging in, filling a cart, and placing an order are not in this release. Those endpoints need traffic captured from a real checkout before they can be written honestly, and guessing at them is how you ship a broken order button.
 
+## When it stops answering
+
+Uber runs its own reCAPTCHA bot defense in front of these endpoints, separate from Cloudflare. A burst of requests from one address trips it, and the API starts returning `403` with `metadata.botdefense.state: challenge` while the website itself still loads normally. The CLI tells you which of the two you hit, because the fix differs: a Cloudflare interstitial means the TLS fingerprint stopped matching, while a bot-defense challenge means you've been noisy. Retrying doesn't clear the latter. Open ubereats.com in a browser on the same connection, complete the check, and give it a few minutes.
+
+Keep the request rate sane and you won't see it.
+
 ## Exit codes
 
 | code | meaning |
 |---|---|
-| 4 | Cloudflare blocked the request twice |
+| 4 | blocked by Cloudflare or Uber's bot defense |
 | 5 | no session, or it expired |
 | 6 | no delivery address set |
 | 7 | store or item not found |

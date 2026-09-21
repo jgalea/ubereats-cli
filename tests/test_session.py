@@ -116,3 +116,41 @@ def test_live_api_clears_cloudflare():
         },
     )
     assert "feedItems" in data
+
+
+BOTDEFENSE_BODY = {
+    "status": "failure",
+    "metadata": {
+        "botdefense": {
+            "state": "challenge",
+            "provider": "RECAPTCHA",
+            "requestUrl": "/web-eats-v2/get-search-feed-v1",
+        }
+    },
+}
+
+
+def test_uber_botdefense_is_named_correctly_and_not_retried():
+    t = FakeTransport([FakeResponse(403, BOTDEFENSE_BODY)])
+    with pytest.raises(ChallengeError) as e:
+        Session(transport=t).api("getSearchFeedV1", {})
+    message = str(e.value)
+    assert "bot defense" in message
+    assert "not Cloudflare" in message
+    assert "challenge" in message
+    assert len(t.calls) == 1
+
+
+def test_botdefense_allow_state_passes_through():
+    body = {"status": "success", "data": {"ok": 1}, "metadata": {"botdefense": {"state": "allow"}}}
+    t = FakeTransport([FakeResponse(200, body)])
+    assert Session(transport=t).api("getSearchFeedV1", {}) == {"ok": 1}
+
+
+def test_cloudflare_html_403_is_still_treated_as_cloudflare(monkeypatch):
+    challenge = FakeResponse(403, "<html><title>Just a moment...</title></html>", is_json=False)
+    t = FakeTransport([challenge, challenge])
+    monkeypatch.setattr("ubereats.session._default_transport", lambda impersonate: t)
+    with pytest.raises(ChallengeError) as e:
+        Session(transport=t).api("getStoreV1", {})
+    assert "Cloudflare blocked" in str(e.value)
