@@ -1,0 +1,332 @@
+{
+ "status": "success",
+ "data": {
+  "feedItems": [
+   {
+    "uuid": "7d407eb1-10bd-4889-aaf5-f92237a6b587",
+    "type": "REGULAR_STORE",
+    "store": {
+     "storeUuid": "7d407eb1-10bd-4889-aaf5-f92237a6b587",
+     "title": {
+      "text": "El Corte Inglés Gourmet e Supermercado (Sintra)"
+     },
+     "meta": [
+      {
+       "text": "1:19PM",
+       "accessibilityText": "1:19PM",
+       "badgeType": "ETD"
+      }
+     ],
+     "rating": {
+      "text": "4.6",
+      "accessibilityText": "Um restaurante com uma ótima classificação: 4.6 em 5 estrelas com base em mais de 200 opiniões.",
+      "badgeType": "RATINGS"
+     },
+     "actionUrl": "/store/el-corte-ingles-gourmet-e-supermercado-sintra/fUB-sRC9SImq9fkiN6a1hw",
+     "favorite": false,
+     "image": {
+      "items": [
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/9c4d3adb393f25706b737484dc73677e.jpeg",
+        "width": 2880,
+        "height": 2304
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/3d6a90d5a1201fa9b18624b830505f40.jpeg",
+        "width": 1080,
+        "height": 864
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/0a6dd7f0d0c3e12d43151296ac7703ef.jpeg",
+        "width": 750,
+        "height": 600
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/af9ffb4e8dc417d7a0ead088a326b27b.jpeg",
+        "width": 640,
+        "height": 512
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/e2547b97411a0fc403ec67ec324fe9e5.jpeg",
+        "width": 550,
+        "height": 440
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/ee2c7e8a5f683fa93c7b269d833dd1d7/811141f8f192e16f7ae3ad5ab7d1de57.jpeg",
+        "width": 240,
+        "height": 192
+       }
+      ]
+     },
+     "signposts": [
+      {
+       "backgroundColor": {
+        "color": "#EC0000"
+       },
+       "text": "Artigos em promoção",
+       "textColor": {
+        "color": "#FFFFFF"
+       }
+      }
+     ],
+     "tracking": {
+      "metaInfo": {
+       "pluginName": "search",
+       "analyticsLabel": "SEARCH_STORE_DISH_RESULTS",
+       "verticalType": "",
+       "category": "",
+       "subcategory": "",
+       "surfaceAreaV2": "",
+       "additionalTrackingData": {
+        "IsSetwiseUpranked": "false"
+       }
+      },
+      "storePayload": {
+       "storeUUID": "7d407eb1-10bd-4889-aaf5-f92237a6b587",
+       "isOrderable": true,
+       "etdInfo": {
+        "dropoffETASec": 3606,
+        "dropoffETARange": {
+         "min": 50,
+         "max": 84,
+         "raw": 60
+        },
+        "minRangeDropoffETASec": 3000,
+        "maxRangeDropoffETASec": 5040,
+        "etdMode": "PREDICTION"
+       },
+       "ratingInfo": {
+        "storeRatingScore": 4.634767836919591,
+        "ratingCount": "2,000+"
+       },
+       "promotionUUID": "00000000-0000-0000-0000-000000000000",
+       "scheduleTimeSlots": null,
+       "storeAvailablityState": "NOT_ACCEPTING_ORDERS",
+       "offerMetadata": {
+        "analyticsUUID": "777d54c6-8653-46c1-8d40-95822860a56c",
+        "promotionUUIDs": [
+         "00000000-0000-0000-0000-000000000000"
+        ],
+        "concatSignpost": "offers.signpost.promo.items_on_sale"
+       }
+      }
+     },
+     "mapMarker": {
+      "latitude": 38.7608,
+      "longitude": -9.386,
+      "zIndex": 9999,
+      "description": {
+       "title": "El Corte Inglés Gourmet e Supermercado",
+       "color": "CONTENT_PRIMARY",
+       "backgroundColor": "BACKGROUND_PRIMARY",
+       "selectedColor": "CONTENT_PRIMARY",
+       "selectedBackgroundColor": "BACKGROUND_PRIMARY"
+      },
+      "markerContent": {
+       "color": "CONTENT_PRIMARY",
+       "selectedColor": "CONTENT_INVERSE_PRIMARY",
+       "backgroundColor": "BACKGROUND_PRIMARY",
+       "selectedBackgroundColor": "BACKGROUND_INVERSE_PRIMARY",
+       "text": "4.6",
+       "size": "SPACING_UNIT_4X"
+      },
+      "secondaryMarkerContent": {
+       "color": "BRAND_CONTENT_ON_PRIMARY",
+       "selectedColor": "BRAND_CONTENT_ON_PRIMARY",
+       "backgroundColor": "BRAND_BACKGROUND_PRIMARY",
+       "selectedBackgroundColor": "BRAND_BACKGROUND_PRIMARY",
+       "icon": "TAG"
+      }
+     },
+     "meta2": [],
+     "layoutType": "MINISTORE_LAYOUT",
+     "endorsements": [
+      {
+       "content": {
+        "richText": {
+         "richTextElements": [
+          {
+           "icon": {
+            "icon": {
+             "icon": "STOREFRONT",
+             "color": "CONTENT_SECONDARY"
+            },
+            "alignment": "CENTERED"
+           },
+           "type": "icon"
+          },
+          {
+           "text": {
+            "text": {
+             "text": " Preços de loja",
+             "font": {
+              "style": "LABEL_X_SMALL",
+              "weight": "MEDIUM"
+             },
+             "color": "BRAND_CONTENT_ON_SECONDARY"
+            },
+            "predefinedDecorations": null
+           },
+           "type": "text"
+          }
+         ]
+        },
+        "type": "richText"
+       },
+       "hierarchy": "SECONDARY",
+       "color": {
+        "custom": {
+         "backgroundColor": "BRAND_BACKGROUND_SECONDARY",
+         "contentColor": "BRAND_CONTENT_ON_SECONDARY"
+        },
+        "type": "custom"
+       },
+       "shape": "PILL",
+       "accessibilityText": " Preços de loja"
+      }
+     ],
+     "meta4": null,
+     "isStoreOpeningSoon": false
+    },
+    "analyticsLabel": "SEARCH_STORE_DISH_RESULTS"
+   },
+   {
+    "uuid": "32eed227-09bd-4346-a12f-4e956393e231",
+    "type": "REGULAR_STORE",
+    "store": {
+     "storeUuid": "32eed227-09bd-4346-a12f-4e956393e231",
+     "title": {
+      "text": "Celeiro (CascaiShopping)"
+     },
+     "actionUrl": "/store/celeiro-cascaishopping/Mu7SJwm9Q0ahL06VY5PiMQ",
+     "favorite": false,
+     "image": {
+      "items": [
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/9c4d3adb393f25706b737484dc73677e.jpeg",
+        "width": 2880,
+        "height": 2304
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/3d6a90d5a1201fa9b18624b830505f40.jpeg",
+        "width": 1080,
+        "height": 864
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/0a6dd7f0d0c3e12d43151296ac7703ef.jpeg",
+        "width": 750,
+        "height": 600
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/af9ffb4e8dc417d7a0ead088a326b27b.jpeg",
+        "width": 640,
+        "height": 512
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/e2547b97411a0fc403ec67ec324fe9e5.jpeg",
+        "width": 550,
+        "height": 440
+       },
+       {
+        "url": "https://tb-static.uber.com/prod/image-proc/processed_images/c4b1a925c35d2e4e406b02c54fa667fc/811141f8f192e16f7ae3ad5ab7d1de57.jpeg",
+        "width": 240,
+        "height": 192
+       }
+      ]
+     },
+     "signposts": [
+      {
+       "backgroundColor": {
+        "color": "#EC0000"
+       },
+       "text": "Artigos em promoção",
+       "textColor": {
+        "color": "#FFFFFF"
+       }
+      }
+     ],
+     "tracking": {
+      "metaInfo": {
+       "pluginName": "search",
+       "analyticsLabel": "SEARCH_STORE_DISH_RESULTS",
+       "verticalType": "",
+       "category": "",
+       "subcategory": "",
+       "surfaceAreaV2": "",
+       "additionalTrackingData": {
+        "IsSetwiseUpranked": "false"
+       }
+      },
+      "storePayload": {
+       "storeUUID": "32eed227-09bd-4346-a12f-4e956393e231",
+       "isOrderable": true,
+       "etdInfo": {
+        "dropoffETASec": 2452,
+        "dropoffETARange": {
+         "min": 31,
+         "max": 56,
+         "raw": 41
+        },
+        "minRangeDropoffETASec": 1860,
+        "maxRangeDropoffETASec": 3360,
+        "etdMode": "PREDICTION"
+       },
+       "ratingInfo": {
+        "storeRatingScore": 4.768028419182949,
+        "ratingCount": "2,000+"
+       },
+       "promotionUUID": "00000000-0000-0000-0000-000000000000",
+       "scheduleTimeSlots": null,
+       "storeAvailablityState": "NOT_ACCEPTING_ORDERS",
+       "offerMetadata": {
+        "analyticsUUID": "777d54c6-8653-46c1-8d40-95822860a56c",
+        "promotionUUIDs": [
+         "00000000-0000-0000-0000-000000000000"
+        ],
+        "concatSignpost": "offers.signpost.promo.items_on_sale"
+       }
+      }
+     },
+     "mapMarker": {
+      "latitude": 38.7392,
+      "longitude": -9.3973,
+      "zIndex": 9998,
+      "description": {
+       "title": "Celeiro",
+       "color": "CONTENT_PRIMARY",
+       "backgroundColor": "BACKGROUND_PRIMARY",
+       "selectedColor": "CONTENT_PRIMARY",
+       "selectedBackgroundColor": "BACKGROUND_PRIMARY"
+      },
+      "markerContent": {
+       "color": "CONTENT_PRIMARY",
+       "selectedColor": "CONTENT_INVERSE_PRIMARY",
+       "backgroundColor": "BACKGROUND_PRIMARY",
+       "selectedBackgroundColor": "BACKGROUND_INVERSE_PRIMARY",
+       "text": "4.8",
+       "size": "SPACING_UNIT_4X"
+      },
+      "secondaryMarkerContent": {
+       "color": "BRAND_CONTENT_ON_PRIMARY",
+       "selectedColor": "BRAND_CONTENT_ON_PRIMARY",
+       "backgroundColor": "BRAND_BACKGROUND_PRIMARY",
+       "selectedBackgroundColor": "BRAND_BACKGROUND_PRIMARY",
+       "icon": "TAG"
+      }
+     },
+     "meta2": [],
+     "layoutType": "MINISTORE_LAYOUT",
+     "endorsements": null,
+     "meta4": null,
+     "isStoreOpeningSoon": false
+    },
+    "analyticsLabel": "SEARCH_STORE_DISH_RESULTS"
+   },
+   {
+    "type": "BILLBOARD",
+    "uuid": "x"
+   }
+  ],
+  "storesMap": {}
+ }
+}

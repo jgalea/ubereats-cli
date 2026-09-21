@@ -1,0 +1,814 @@
+{
+ "status": "success",
+ "data": {
+  "title": "Sushi Yatomi",
+  "currencyCode": "EUR",
+  "citySlug": "lisbon",
+  "etaRange": {
+   "text": "59 – 79 min",
+   "iconUrl": "",
+   "accessibilityText": "Entregue dentro de 59 a 79 min"
+  },
+  "catalogSectionsMap": {
+   "main": [
+    {
+     "payload": {
+      "standardItemsPayload": {
+       "title": {
+        "text": "Ofertas",
+        "textFormat": "<span>Ofertas</span>"
+       },
+       "catalogItems": [
+        {
+         "uuid": "0e46b80d-38cc-46a7-b92e-8d3663ef2054",
+         "title": "Simple Box 4",
+         "itemDescription": "8 uramakis de abacate e 8 hosomakis.",
+         "price": 2199,
+         "priceTagline": {
+          "text": "21,99 €",
+          "textFormat": "<span>21,99 €</span>",
+          "accessibilityText": "21,99 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 4",
+          "textFormat": "<span>Simple Box 4</span>",
+          "accessibilityText": "Simple Box 4"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "8 uramakis de abacate e 8 hosomakis.",
+          "textFormat": "<span style=\"color:#757575\">8 uramakis de abacate e 8 hosomakis.</span>"
+         },
+         "subsectionUuid": "556a657a-beef-58f0-bf8e-df63a3989819",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "21,99 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "21,99 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 4",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 4"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 0,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        },
+        {
+         "uuid": "4115ec82-4bc2-4a4a-8fa6-1099127b7ffa",
+         "title": "Simple Box 2",
+         "itemDescription": "2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.",
+         "price": 1599,
+         "priceTagline": {
+          "text": "15,99 €",
+          "textFormat": "<span>15,99 €</span>",
+          "accessibilityText": "15,99 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 2",
+          "textFormat": "<span>Simple Box 2</span>",
+          "accessibilityText": "Simple Box 2"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.",
+          "textFormat": "<span style=\"color:#757575\">2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.</span>"
+         },
+         "subsectionUuid": "556a657a-beef-58f0-bf8e-df63a3989819",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "15,99 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "15,99 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 2",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 2"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 1,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        },
+        {
+         "uuid": "4c53647f-be1e-425c-a413-20f8c31d84fd",
+         "title": "Simple Box 6",
+         "itemDescription": "2 nigiris de salmão, 2 gunkan, 2 sashimis, 8 uramakis de abacate e 4 makis.",
+         "price": 2699,
+         "priceTagline": {
+          "text": "26,99 €",
+          "textFormat": "<span>26,99 €</span>",
+          "accessibilityText": "26,99 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 6",
+          "textFormat": "<span>Simple Box 6</span>",
+          "accessibilityText": "Simple Box 6"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "2 nigiris de salmão, 2 gunkan, 2 sashimis, 8 uramakis de abacate e 4 makis.",
+          "textFormat": "<span style=\"color:#757575\">2 nigiris de salmão, 2 gunkan, 2 sashimis, 8 uramakis de abacate e 4 makis.</span>"
+         },
+         "subsectionUuid": "556a657a-beef-58f0-bf8e-df63a3989819",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "26,99 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "26,99 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 6",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 6"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 2,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        }
+       ]
+      }
+     }
+    },
+    {
+     "payload": {
+      "standardItemsPayload": {
+       "title": {
+        "text": "Sushi Box"
+       },
+       "catalogItems": [
+        {
+         "uuid": "e5a40e79-b71e-46f7-9a89-3b47e83643b2",
+         "title": "Simple Box 1",
+         "itemDescription": "2 nigiris, 4 uramaki de abacate, 4 hosomakis, 4 hot rolls e 4 mix de gyozas.",
+         "price": 2399,
+         "priceTagline": {
+          "text": "23,99 €",
+          "textFormat": "<span>23,99 €</span>",
+          "accessibilityText": "23,99 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 1",
+          "textFormat": "<span>Simple Box 1</span>",
+          "accessibilityText": "Simple Box 1"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "2 nigiris, 4 uramaki de abacate, 4 hosomakis, 4 hot rolls e 4 mix de gyozas.",
+          "textFormat": "<span style=\"color:#757575\">2 nigiris, 4 uramaki de abacate, 4 hosomakis, 4 hot rolls e 4 mix de gyozas.</span>"
+         },
+         "subsectionUuid": "6cb38c44-85c9-4e36-932a-3d164607b27d",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "23,99 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "23,99 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 1",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 1"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 0,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        },
+        {
+         "uuid": "4115ec82-4bc2-4a4a-8fa6-1099127b7ffa",
+         "title": "Simple Box 2",
+         "itemDescription": "2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.",
+         "price": 1599,
+         "priceTagline": {
+          "text": "15,99 €",
+          "textFormat": "<span>15,99 €</span>",
+          "accessibilityText": "15,99 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 2",
+          "textFormat": "<span>Simple Box 2</span>",
+          "accessibilityText": "Simple Box 2"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.",
+          "textFormat": "<span style=\"color:#757575\">2 nigiris, 2 gunkans, 4 uramakis de abacate e 4 hot.</span>"
+         },
+         "subsectionUuid": "6cb38c44-85c9-4e36-932a-3d164607b27d",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "15,99 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "15,99 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 2",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 2"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 1,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        },
+        {
+         "uuid": "8ff4abd3-8974-4b07-9f1f-6294763e1ae5",
+         "title": "Simple Box 3",
+         "itemDescription": "2 nigiris, 2 gunkans, 8 uramakis de abacate e 4 hosomakis.",
+         "price": 2649,
+         "priceTagline": {
+          "text": "26,49 €",
+          "textFormat": "<span>26,49 €</span>",
+          "accessibilityText": "26,49 €"
+         },
+         "spanCount": 2,
+         "displayType": "LIST",
+         "titleBadge": {
+          "text": "Simple Box 3",
+          "textFormat": "<span>Simple Box 3</span>",
+          "accessibilityText": "Simple Box 3"
+         },
+         "isSoldOut": false,
+         "hasCustomizations": true,
+         "numAlcoholicItems": 0,
+         "itemPromotion": {
+          "buyXGetYItemPromotion": {
+           "buyQuantity": 1,
+           "getQuantity": 1,
+           "maxRedemptionCount": 3
+          },
+          "type": "buyXGetYItemPromotion"
+         },
+         "itemDescriptionBadge": {
+          "text": "2 nigiris, 2 gunkans, 8 uramakis de abacate e 4 hosomakis.",
+          "textFormat": "<span style=\"color:#757575\">2 nigiris, 2 gunkans, 8 uramakis de abacate e 4 hosomakis.</span>"
+         },
+         "subsectionUuid": "6cb38c44-85c9-4e36-932a-3d164607b27d",
+         "isAvailable": true,
+         "purchaseInfo": {
+          "purchaseOptions": [],
+          "pricingInfo": {}
+         },
+         "sectionUuid": "76fc1e66-8517-4c1a-b704-2037ce82d728",
+         "promoInfo": {
+          "promotionUUID": "a85c9da5-a766-4e9f-8a30-2e4a3df331ba",
+          "promoBadge": {
+           "content": {
+            "richText": {
+             "richTextElements": [
+              {
+               "text": {
+                "text": {
+                 "text": "Compre 1, receba 1 grátis",
+                 "font": {
+                  "style": "LABEL_X_SMALL",
+                  "weight": "MEDIUM"
+                 },
+                 "color": "BRAND_CONTENT_ON_PRIMARY"
+                },
+                "predefinedDecorations": null
+               },
+               "type": "text"
+              }
+             ],
+             "accessibilityText": "Compre 1, receba 1 grátis"
+            },
+            "type": "richText"
+           },
+           "hierarchy": "PRIMARY",
+           "color": {
+            "custom": {
+             "backgroundColor": "BRAND_BACKGROUND_PRIMARY"
+            },
+            "type": "custom"
+           },
+           "shape": "PILL",
+           "accessibilityText": "Compre 1, receba 1 grátis"
+          },
+          "badgePosition": "OFF_IMAGE_BELOW_TEXT"
+         },
+         "quickAddConfig": {
+          "shouldShow": true,
+          "isInteractionEnabled": false,
+          "position": "BOTTOM_TRAILING"
+         },
+         "labelPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "26,49 €",
+              "font": {
+               "style": "PARAGRAPH_SMALL",
+               "weight": "NORMAL"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "26,49 €"
+         },
+         "headingPrimary": {
+          "richTextElements": [
+           {
+            "text": {
+             "text": {
+              "text": "Simple Box 3",
+              "font": {
+               "style": "LABEL_DEFAULT",
+               "weight": "MEDIUM"
+              },
+              "color": "CONTENT_PRIMARY"
+             },
+             "predefinedDecorations": null
+            },
+            "type": "text"
+           }
+          ],
+          "accessibilityText": "Simple Box 3"
+         },
+         "itemAvailabilityState": "UNKNOWN",
+         "catalogItemAnalyticsData": {
+          "catalogSectionItemPosition": 2,
+          "promoType": "BOGO"
+         },
+         "imageOverlayElements": null,
+         "itemThumbnailElements": null,
+         "isWebPdpSupported": false
+        }
+       ]
+      }
+     }
+    },
+    {
+     "payload": {
+      "type": "AISLE",
+      "aisleShortcutItems": []
+     }
+    }
+   ]
+  }
+ }
+}
