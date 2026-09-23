@@ -77,6 +77,8 @@ uv tool install .
 ubereats version
 ```
 
+That works the same on macOS, Linux and Windows, with [uv](https://docs.astral.sh/uv/) and Git installed. On Windows, `~/.ubereats` is the `.ubereats` folder in your user profile. The Windows side hasn't been tested on a real machine yet.
+
 ## Status
 
 Browsing works end to end: address, search, menus. Logging in, filling a cart, and placing an order are not in this release. Those endpoints need traffic captured from a real checkout before they can be written honestly, and guessing at them is how you ship a broken order button.

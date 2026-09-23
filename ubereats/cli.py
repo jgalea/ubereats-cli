@@ -106,4 +106,7 @@ def menu(
 
 
 def main() -> None:
+    # A Windows console or pipe may not be UTF-8; print what it can rather than crash.
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(errors="replace")
     app()

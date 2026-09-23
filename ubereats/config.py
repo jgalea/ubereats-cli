@@ -28,13 +28,13 @@ def exclude_path() -> Path:
 
 def read_json(path: Path):
     try:
-        return json.loads(path.read_text())
+        return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return None
 
 
 def write_json(path: Path, data, *, mode: int = 0o600) -> None:
     tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(data, ensure_ascii=False))
+    tmp.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     os.chmod(tmp, mode)
     os.replace(tmp, path)

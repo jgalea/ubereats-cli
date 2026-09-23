@@ -10,7 +10,7 @@ def load_exclusions(spec: str | None) -> list[str]:
     if not path.exists():
         return []
     names = []
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding="utf-8-sig").splitlines():
         line = line.strip()
         if line and not line.startswith("#"):
             names.append(line.lower())
